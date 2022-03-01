@@ -1,9 +1,13 @@
+let chngstar = '../images/homework1/chngstar.gif'
+let star = '../images/homework1/star.gif'
+
+
 $('img').on('mouseenter', function () {
-  $(this).attr('src', "../images/homework1/chngstar.gif").prevAll().attr('src', "../images/homework1/chngstar.gif").end().nextAll().attr('src', "../images/homework1/star.gif");
+  $(this).attr('src', chngstar).prevAll().attr('src', chngstar).end().nextAll().attr('src', star);
   $('#score').html('打分中...' + $(this).attr('data-id'))
 }).on('mouseleave', function () {
-  $('img').attr('src', "../images/homework1/star.gif");
-  $('img[index="dianji"]').attr('src', "../images/homework1/chngstar.gif").prevAll().attr('src', "../images/homework1/chngstar.gif");
+  $('img').attr('src', star);
+  $('img[index="dianji"]').attr('src', chngstar).prevAll().attr('src', chngstar);
   $('#score').html('')
 }).on('click', function () {
   $(this).attr('index', 'dianji').siblings().removeAttr('index');
@@ -17,5 +21,5 @@ $('img').on('mouseenter', function () {
 
 $('#clean').click(function () {
   $('#score').html('')
-  $('img').attr('src', "../images/homework1/star.gif")
+  $('img').attr('src', star)
 }) 
