@@ -4,11 +4,11 @@ $.getJSON("/js/public/data-zh.json", "", function (data) {
   // console.log(data.districts)
 
   $.each(data.districts, function (j) {
-    let c = j;
     let c_text = data.districts
+    let c = j;
     // console.log(c_text[c])
-    let str1 = '<tr data-id="' + c + '"><th rowspan="' + +'"></th></tr>'
-    $('.thead').append(str1);
+    // let str1 = '<tr data-id="' + c + '"><th rowspan="' + +'"></th></tr>'
+    // $('.thead').append(str1);
 
 
     $.map(c_text[c][0], function (k) {
@@ -25,23 +25,29 @@ $.getJSON("/js/public/data-zh.json", "", function (data) {
   })
 
   $.each(data.counties, function (i) {
-    // console.log(i)
-    // console.log(data.counties.length)
-    console.log($('thead tr'))
+    let a = data.districts[i][0].length
+    let b = data.counties[i]
+    // console.log(a)
+    // console.log(b)
+    // console.log(b)
+    for (e = 0; e < $('thead tr').length; e++) {
+      // let en = $('.thead tr:nth-child(' + (e + 1) + ')').data('id');
+      // let ae = $('.thead tr').data('id', en)[e]
+      // console.log(en)
+      // console.log(ae)
+      // // console.log(e1)
+      // let str0 = '<tr data-id="' + c + '"><th rowspan="' + +'"></th></tr>'
+      // console.log(i)
+      console.log(e)
+      // < tr data-id="' + c + '" > <th rowspan="' + +'"></th></ >
 
-    // switch (i) {
-    //   case 1:
-    //     let str = '<tr><th rowspan="">' + i + '</th></tr>'
-    //     break;
+      // $('').append(str0)
+      // console.log(e) //0
+      // console.log($('.thead tr:nth-child(' + (e + 1) + ')').data('id'))
+      // console.log(e) //1
+      // console.log($('.thead tr:nth-child(' + (e + 1) + ')').data('id'))
 
-    //   default:
-    //     break;
-    // }
-    // console.log($('.thead').find('tr'))
+    }
 
-    // console.log(toString($('.thead').find('tr')[i]))
-    // let str = '<tr><th rowspan="">' + i + '</th></tr>'
-    // console.log(i)
-    // $('.thead').append(str);
   })
 });
