@@ -1,6 +1,7 @@
 body {
   background-color: #f7e4e4;
 }
+
 body .container {
   display: -webkit-box;
   display: -moz-box;
@@ -22,9 +23,11 @@ body .container {
   align-items: center;
   margin-top: 20%;
 }
+
 body .container .card img {
   cursor: pointer;
 }
+
 body .container #clean {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -34,6 +37,7 @@ body .container #clean {
   text-align: center;
   padding: 6px 10px 4px 10px;
 }
+
 body .container #score {
   font-size: 24px;
   color: #eb3838;
