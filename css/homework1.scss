@@ -1,6 +1,7 @@
 body {
   background-color: #f7e4e4;
   .container {
+    position: relative;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -25,6 +26,7 @@ body {
         cursor: pointer;
       }
     }
+
     #clean {
       margin-top: 20px;
       margin-bottom: 20px;
@@ -34,10 +36,22 @@ body {
       text-align: center;
       padding: 6px 10px 4px 10px;
     }
+
     #score {
       font-size: 24px;
       color: rgb(235, 56, 56);
       font-weight: 600;
+    }
+
+    .reload{
+      margin-top: 10px;
+      border: 2px solid #ef8888;
+      border-radius: 36px;
+      padding: 10px 20px 8px 20px;
+      font-size: 24px;
+      color: #eb3838;
+      font-weight: 600;
+      cursor: pointer;
     }
   }
 }

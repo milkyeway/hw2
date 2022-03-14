@@ -4,6 +4,14 @@ body {
   .container {
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     table {
       margin: 50px 0;
       display: -webkit-box;

@@ -1,6 +1,3 @@
-// console.log(data);
-// console.log(data[0].districts);
-
 $.each(data, function (index, value) {
   // console.log(index);
   // console.log(data);
@@ -25,4 +22,15 @@ $.each(data, function (index, value) {
     $('.tbody').append(str);
 
   })
+
 })
+
+// $('.YourLocation').click(function(){
+//   let YL_val = $('.YourLocation').val();
+//   // console.log(YL_val)
+
+//   if(YL_val == ''){
+
+//   }
+
+// })

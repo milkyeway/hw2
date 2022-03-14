@@ -1,10 +1,10 @@
 (function (doc, win) {
   var docEl = doc.documentElement,
-    // 手机旋转事件,大部分手机浏览器都支持 onorientationchange 如果不支持，可以使用原始的 resize
+    // 手機旋轉事件,大部分手機瀏覽器都支援 onorientationchange 如果不支援，可以使用原始的 resize
     resizeEvt =
       "orientationchange" in window ? "orientationchange" : "resize",
     recalc = function () {
-      //clientWidth: 获取对象可见内容的宽度，不包括滚动条，不包括边框
+      //clientWidth: 獲取對象可見内容的寬度，不包括滾動條，不包括邊框
       var clientWidth = docEl.clientWidth;
       if (!clientWidth) return;
       if (window.innerWidth <= 768) {
@@ -17,8 +17,8 @@
     };
 
   recalc();
-  //判断是否支持监听事件 ，不支持则停止
+  //判断是否支援監聽事件 ，不支援則停止
   if (!doc.addEventListener) return;
-  //注册翻转事件
+  //註冊翻轉事件
   win.addEventListener(resizeEvt, recalc, false);
 })(document, window);

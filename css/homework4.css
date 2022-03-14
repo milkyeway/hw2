@@ -2,12 +2,18 @@ body {
   background-color: #f7e4e4;
   overflow-y: visible !important;
 }
-
 body .container {
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
 body .container table {
   margin: 50px 0;
   display: -webkit-box;
@@ -20,15 +26,12 @@ body .container table {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 body .container table tbody tr th {
   padding: 0 20px;
 }
-
 body .container table tbody tr td {
   padding: 10px 15px;
 }
-
 body .container table tbody tr th,
 body .container table tbody tr td {
   border: 1px solid red;
